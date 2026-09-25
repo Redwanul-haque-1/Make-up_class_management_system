@@ -1,0 +1,760 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f6fb;
+
+    color: #17294d;
+}
+
+
+/* =====================================
+   Browser Window
+   ===================================== */
+
+.browser-window {
+    width: 96%;
+
+    max-width: 1100px;
+
+    margin: 20px auto;
+
+    background: #f7f9fd;
+
+    border: 2px solid #d4dbe8;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================
+   Browser Header
+   ===================================== */
+
+.browser-header {
+    height: 58px;
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 20px;
+
+    gap: 18px;
+}
+
+
+.browser-dots {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+.browser-dots span {
+    width: 13px;
+
+    height: 13px;
+
+    border-radius: 50%;
+
+    display: block;
+}
+
+
+.red {
+    background: #ff4f4f;
+}
+
+
+.yellow {
+    background: #ffbd3b;
+}
+
+
+.green {
+    background: #31c84b;
+}
+
+
+.address-bar {
+    flex: 1;
+
+    background: #edf0f6;
+
+    border-radius: 20px;
+
+    padding: 8px 18px;
+
+    color: #7a8498;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   System Header
+   ===================================== */
+
+.system-header {
+    background: #172b50;
+
+    color: white;
+
+    min-height: 72px;
+
+    padding: 0 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.system-title {
+    font-size: 22px;
+
+    font-weight: bold;
+}
+
+
+.header-right {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    font-size: 15px;
+}
+
+
+.header-right a {
+    color: white;
+
+    text-decoration: none;
+
+    padding-left: 25px;
+
+    border-left: 1px solid #72809a;
+}
+
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   Main Container
+   ===================================== */
+
+.dashboard-container {
+    padding: 25px;
+}
+
+
+/* =====================================
+   Welcome
+   ===================================== */
+
+.welcome-section {
+    background: white;
+
+    border: 1px solid #dce3ef;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+
+.welcome-section h1 {
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+
+.welcome-section p {
+    color: #61708d;
+
+    font-size: 15px;
+}
+
+
+.teacher-badge {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.teacher-icon {
+    width: 58px;
+
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: #e4efff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+
+.teacher-badge strong {
+    display: block;
+
+    font-size: 17px;
+
+    margin-bottom: 5px;
+}
+
+
+.teacher-badge span {
+    color: #61708d;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   Sections
+   ===================================== */
+
+.dashboard-section {
+    background: white;
+
+    border: 1px solid #dce3ef;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.dashboard-section h2 {
+    font-size: 22px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================
+   Teacher Information
+   ===================================== */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 12px;
+}
+
+
+.info-card {
+    background: #f0f3f9;
+
+    padding: 17px;
+
+    border-radius: 9px;
+}
+
+
+.info-card span {
+    display: block;
+
+    color: #536887;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.info-card strong {
+    font-size: 15px;
+
+    word-break: break-word;
+}
+
+
+.address-card {
+    grid-column: span 3;
+}
+
+
+/* =====================================
+   Form
+   ===================================== */
+
+form label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+form select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccd5e3;
+
+    border-radius: 7px;
+
+    background: white;
+
+    color: #253657;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+.sub-label {
+    margin-top: 3px;
+}
+
+
+/* =====================================
+   Time Slots
+   ===================================== */
+
+.time-slots {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 8px;
+}
+
+
+.time-slot {
+    border: 1px solid #cbd5e5;
+
+    border-radius: 22px;
+
+    padding: 10px 15px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+
+.time-slot:hover {
+    border-color: #2875e8;
+}
+
+
+.time-slot input {
+    display: none;
+}
+
+
+.time-slot:has(input:checked) {
+    background: #2875e8;
+
+    border-color: #2875e8;
+
+    color: white;
+}
+
+
+.time-slot.disabled {
+    background: #f2f4f8;
+
+    color: #a3adbd;
+
+    border-color: #dce1e8;
+
+    cursor: not-allowed;
+}
+
+
+.availability-note {
+    color: #71809a;
+
+    font-size: 12px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================
+   Classrooms
+   ===================================== */
+
+#classroom-list {
+    margin-bottom: 20px;
+}
+
+
+.room-placeholder {
+    padding: 12px;
+
+    background: #f5f7fb;
+
+    border: 1px solid #dce3ef;
+
+    border-radius: 7px;
+
+    color: #71809a;
+
+    font-size: 13px;
+}
+
+
+.room-option {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 11px 14px;
+
+    border: 1px solid #d5dce8;
+
+    border-radius: 7px;
+
+    margin-bottom: 7px;
+
+    cursor: pointer;
+
+    background: white;
+}
+
+
+.room-option:hover {
+    border-color: #2875e8;
+}
+
+
+.room-option.selected {
+    border-color: #2875e8;
+
+    background: #eef5ff;
+}
+
+
+.room-option input {
+    margin-right: 8px;
+}
+
+
+.room-details {
+    color: #61708d;
+
+    font-size: 12px;
+}
+
+
+/* =====================================
+   Submit Button
+   ===================================== */
+
+.submit-button {
+    width: 100%;
+
+    border: none;
+
+    background: #2875e8;
+
+    color: white;
+
+    padding: 13px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.submit-button:hover {
+    background: #1764d4;
+}
+
+
+/* =====================================
+   Messages
+   ===================================== */
+
+.success-message {
+    background: #e5f7ea;
+
+    color: #18733a;
+
+    border: 1px solid #b9e5c7;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+}
+
+
+.error-message {
+    background: #fde8e8;
+
+    color: #b42318;
+
+    border: 1px solid #f3b8b8;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   My Requests
+   ===================================== */
+
+.request-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.request-card {
+    background: #edf1f8;
+
+    border-radius: 7px;
+
+    padding: 13px 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.request-card strong {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+.request-card p {
+    color: #61708d;
+
+    font-size: 12px;
+}
+
+
+.request-status {
+    padding: 6px 12px;
+
+    border-radius: 15px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+}
+
+
+.request-status.pending {
+    background: #fff1cc;
+
+    color: #9a6a00;
+}
+
+
+.request-status.approved,
+.request-status.confirmed {
+    background: #dff5e5;
+
+    color: #16803c;
+}
+
+
+.request-status.rejected {
+    background: #fde2e2;
+
+    color: #c62828;
+}
+
+
+.empty-message {
+    background: #f5f7fb;
+
+    border-radius: 8px;
+
+    padding: 15px;
+
+    color: #71809a;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   Mobile
+   ===================================== */
+
+@media (max-width: 750px) {
+
+    .browser-window {
+        width: 96%;
+
+        margin: 10px auto;
+    }
+
+
+    .browser-header {
+        height: 48px;
+
+        padding: 0 12px;
+    }
+
+
+    .address-bar {
+        font-size: 10px;
+    }
+
+
+    .system-header {
+        padding: 15px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .header-right {
+        width: 100%;
+
+        justify-content: space-between;
+    }
+
+
+    .dashboard-container {
+        padding: 12px;
+    }
+
+
+    .welcome-section {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .address-card {
+        grid-column: span 2;
+    }
+
+
+    .time-slots {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .address-card {
+        grid-column: span 1;
+    }
+
+
+    .time-slots {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .request-card {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+}
